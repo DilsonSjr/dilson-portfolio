@@ -1,0 +1,13 @@
+.mobile-menu-trigger{display:none}
+@media(max-width:767px){
+ .intro.frame{padding:0;display:grid;align-items:center;min-height:clamp(25rem,72svh,47rem)}
+ .intro-inner{display:block;width:100%}.intro .hero-nav{display:none}
+ .intro .quote{text-align:center}.intro .quote h1{font-size:clamp(2.5rem,13vw,5.8rem);line-height:1.02}
+ .intro .quote figcaption{margin-top:1.25rem;font-size:clamp(.75rem,3vw,1rem)}
+ .mobile-menu-trigger{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom));z-index:50;display:grid;place-content:center;justify-items:center;gap:5px;width:64px;height:64px;background:var(--blue);color:white;border:1px solid white;box-shadow:0 3px 12px #0002;font:600 12px var(--mono);cursor:pointer}
+ .mobile-menu-trigger svg{width:24px;height:20px}
+ #mobile-nav{position:fixed;inset:auto max(16px,env(safe-area-inset-right)) calc(max(16px,env(safe-area-inset-bottom)) + 72px) auto;margin:0;padding:8px 16px;width:min(18rem,calc(100vw - 32px));max-height:calc(100dvh - 110px);overflow:auto;background:white;color:var(--ink);border:1px solid var(--blue);box-shadow:0 8px 28px #0002}
+ #mobile-nav a{display:flex;align-items:center;min-height:48px;text-decoration:none;font:600 1rem var(--mono)}#mobile-nav a+a{border-top:1px solid #ddd}
+ .footer{padding-bottom:80px}
+}
+@media(min-width:768px){#mobile-nav{display:none}}

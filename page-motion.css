@@ -1,0 +1,9 @@
+@media(prefers-reduced-motion:no-preference){
+ body > :is(header, main, footer){animation:page-arrive 720ms backwards}
+ @keyframes page-arrive{0%{opacity:0;transform:translateY(12px)}55%{opacity:1;transform:translateY(-1.8px)}78%{transform:translateY(.55px)}100%{opacity:1;transform:none}}
+}
+.quote .type-word{display:inline-block;position:relative}
+.quote .type-ink{position:absolute;inset:0 auto auto 0;white-space:pre;letter-spacing:inherit}
+.quote .type-base{visibility:hidden}
+.quote .type-cursor{position:absolute;top:0;left:0;line-height:inherit;pointer-events:none;transition:left 65ms ease-out;animation:type-blink .5s steps(1,end) infinite alternate}
+@keyframes type-blink{from{opacity:1}to{opacity:0}}

@@ -1,0 +1,4 @@
+.wordmark,.signature:has(.di-mark){display:inline-flex;align-items:center;text-decoration:none}
+.di-mark{display:inline-flex;align-items:center;justify-content:space-between;width:max-content;font:800 clamp(36px,5.2vw,78px)/1 "Azeret Mono",monospace;color:var(--blue);letter-spacing:0}
+.signature .di-mark{color:white}
+.di-mark>span{display:inline-block;transform-origin:50% 80%}

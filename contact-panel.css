@@ -1,0 +1,8 @@
+.contact-panel{background:var(--cream);padding-block:clamp(48px,7vw,116px);scroll-margin-top:16px}
+.contact-panel p{font:500 clamp(.88rem,1.25vw,1.15rem)/1.45 var(--mono);max-width:36ch;margin-bottom:1.6rem}
+.contact-panel h2{font:800 clamp(2.9rem,9vw,9rem)/1 var(--mono);letter-spacing:-.075em}
+.contact-action{display:flex;align-items:center;justify-content:space-between;gap:.25em;color:var(--blue);text-decoration:none;border-bottom:2px solid currentColor;padding-block:.05em .16em}
+.contact-arrow{width:.76em;height:.76em;flex:none;transition:transform .25s ease}
+@media (hover:hover){.contact-action:hover .contact-arrow{transform:translate(.05em,-.07em)}.contact-action:hover{color:var(--ink)}}
+.contact-action:focus-visible .contact-arrow{transform:translate(.05em,-.07em)}
+@media(prefers-reduced-motion:reduce){.contact-action .contact-arrow{transition:none;transform:none}}

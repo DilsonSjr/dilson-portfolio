@@ -1,0 +1,12 @@
+// Edit titles, descriptions, image paths and destinations here.
+export const projects = [
+  { slug: 'form', title: 'Form Journal', category: 'Editorial design', image: 'form', alt: 'Blue Form magazine on a lavender studio floor.', description: 'A study in scale and contrast, built around an oversized masthead and a single electric blue.' },
+  { slug: 'curve', title: 'Soft Curve', category: 'Art direction', image: 'curve', alt: 'Orange chair with a tubular chrome frame.', description: 'A furniture study that pairs the softness of upholstery with the hard reflection of bent steel.' },
+  { slug: 'rotation', title: 'In Rotation', category: 'Music packaging', image: 'rotation', alt: 'Black vinyl record in a yellow sleeve with a bold graphic mark.', description: 'A stripped-back record sleeve where a single black mark carries the rhythm of the release.' },
+  { slug: 'concrete', title: 'Concrete Studies', category: 'Photography', image: 'concrete', alt: 'Black-and-white view of intersecting concrete stairs.', description: 'Architectural forms break into light, texture and shadow in this monochrome photo study.' },
+  { slug: 'glyph', title: 'One Glyph', category: 'Poster design', image: 'glyph', alt: 'Experimental red and cream typographic poster.', description: 'A poster experiment that stretches a single letter until it becomes both image and type.' },
+  { slug: 'disk', title: 'Archive 404', category: 'Visual archive', image: 'disk', alt: 'Vintage blue floppy disk photographed against a blue backdrop.', description: 'A look at the physical details and small rituals of technologies we used to live with.' },
+  { slug: 'fold', title: 'Field Fold', category: 'Packaging', image: 'fold', alt: 'Green and cream geometric product boxes.', description: 'A modular packaging study built from a two-color palette and a repeating stripe.' },
+  { slug: 'margin', title: 'Wide Margin', category: 'Book design', image: 'margin', alt: 'Open book with a monochrome image and serif typography.', description: 'An editorial spread exploring the quiet space between a photograph and its facing page.' },
+  { slug: 'glass', title: 'Blue Matter', category: 'Material study', image: 'glass', alt: 'Cobalt glass sculpture on a pale blue surface.', description: 'An experiment in transparency, using a glass form to bend light through one shade of blue.' }
+].map(project => ({ ...project, href: '/projects/' + project.slug + '/' }));
